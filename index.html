@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>प्रीमियम विवाह बायोडाटा | नेहा अनिल झिंजूर्के</title>
+  
+  <!-- Google Fonts & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(145deg, #c9b280 0%, #b48b5a 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 32px 24px;
+      font-family: 'Inter', 'Poppins', sans-serif;
+    }
+
+    /* A4 Premium Page */
+    .biodata-card {
+      width: 794px;
+      min-height: 1123px;
+      background: #fffef7;
+      position: relative;
+      box-shadow: 0 30px 50px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(202, 166, 75, 0.3) inset, 0 0 0 8px #fff8ed, 0 0 0 9px #caa64b;
+      border-radius: 28px;
+      overflow: hidden;
+    }
+
+    /* Traditional Motif Background */
+    .biodata-card {
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgdmlld0JveD0iMCAwIDgwIDgwIj48Y2lyY2xlIGN4PSI0MCIgY3k9IjQwIiByPSIxMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjY2FhNjRiIiBzdHJva2Utd2lkdGg9IjAuNiIgb3BhY2l0eT0iMC4xNSIvPjxjaXJjbGUgY3g9IjQwIiBjeT0iNDAiIHI9IjIyIiBmaWxsPSJub25lIiBzdHJva2U9IiNjYWE2NGIiIHN0cm9rZS13aWR0aD0iMC40IiBvcGFjaXR5PSIwLjEiLz48cGF0aCBkPSJNNDAgMTBMNDAgNzBNMTAgNDBMNzAgNDAiIHN0cm9rZT0iI2NhYTY0YiIgc3Ryb2tlLXdpZHRoPSIwLjQiIG9wYWNpdHk9IjAuMDgiLz48Y2lyY2xlIGN4PSI0MCIgY3k9IjQwIiByPSIzMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjY2FhNjRiIiBzdHJva2Utd2lkdGg9IjAuMyIgb3BhY2l0eT0iMC4wNSIgc3Ryb2tlLWRhc2hhcnJheT0iNCA0Ii8+PHBvbHlsaW5lIHBvaW50cz0iNDAsMTggNTAsMzAgNDAsNDIgMzAsMzAiIHN0cm9rZT0iI2NhYTY0YiIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIwLjUiIG9wYWNpdHk9IjAuMTUiLz48L3N2Zz4=');
+      background-repeat: repeat;
+      background-size: 68px;
+      background-blend-mode: overlay;
+      background-color: #fffef7;
+    }
+
+    .inner-padding {
+      padding: 38px 36px 32px 36px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .ornamental-border {
+      position: absolute;
+      top: 20px;
+      left: 36px;
+      right: 36px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #caa64b, #c2a144, #caa64b, transparent);
+    }
+    
+    .ganesh-header {
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    .ganesh-header h3 {
+      font-family: 'Poppins', serif;
+      font-size: 20px;
+      font-weight: 500;
+      color: #8b6b3c;
+      letter-spacing: 2px;
+      background: #fef4e0;
+      display: inline-block;
+      padding: 4px 28px;
+      border-radius: 40px;
+    }
+
+    .title-section {
+      text-align: center;
+      margin: 12px 0 20px 0;
+    }
+    .main-title {
+      font-size: 32px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #2e5d4e, #caa64b);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      display: inline-block;
+      letter-spacing: 1px;
+      font-family: 'Poppins', sans-serif;
+    }
+    .title-decoration {
+      display: block;
+      width: 80px;
+      height: 2px;
+      background: #caa64b;
+      margin: 12px auto 0;
+      border-radius: 4px;
+    }
+
+    /* Two column layout */
+    .two-columns {
+      display: flex;
+      gap: 32px;
+      margin-top: 12px;
+    }
+    .left-col {
+      flex: 1.4;
+    }
+    .right-col {
+      flex: 0.9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 28px;
+    }
+
+    /* Premium Image Containers – improved for any image */
+    .direct-photo-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 28px;
+    }
+    .photo-item {
+      background: linear-gradient(145deg, #fff2df, #ffe6ca);
+      padding: 12px;
+      border-radius: 32px;
+      box-shadow: 0 18px 28px -12px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.8);
+      width: fit-content;
+      max-width: 100%;
+    }
+    .photo-item img {
+      display: block;
+      width: 260px;
+      height: auto;
+      max-height: 620px;
+      object-fit: cover;
+      border-radius: 24px;
+      border: 2px solid #fff8ed;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    /* For larger screens, images look balanced */
+    @media (min-width: 800px) {
+      .photo-item img {
+        width: 280px;
+      }
+    }
+
+    /* Info Cards */
+    .info-card {
+      background: rgba(255, 252, 242, 0.7);
+      border-radius: 20px;
+      padding: 4px 0;
+      margin-bottom: 20px;
+    }
+    .section-title {
+      font-weight: 700;
+      font-size: 18px;
+      color: #2e5d4e;
+      border-left: 5px solid #caa64b;
+      padding-left: 14px;
+      margin-bottom: 14px;
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-title i {
+      color: #caa64b;
+    }
+    .detail-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+      font-size: 14.5px;
+      padding: 0 6px;
+      border-bottom: 1px dotted #f0e3cf;
+      padding-bottom: 8px;
+    }
+    .label {
+      font-weight: 700;
+      color: #4a3b1f;
+      width: 130px;
+      flex-shrink: 0;
+    }
+    .value {
+      color: #2c2b26;
+      font-weight: 500;
+      flex: 1;
+    }
+    .relation-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 6px;
+      padding: 0 6px 12px 6px;
+    }
+    .relation-tag {
+      background: #faf0df;
+      padding: 4px 12px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #6b4c2c;
+    }
+    .elegant-footer {
+      margin-top: 30px;
+      text-align: center;
+      border-top: 1px solid #e9ddc3;
+      padding-top: 18px;
+      font-size: 11px;
+      color: #aa8c5a;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .mobile-highlight {
+      font-size: 16px;
+      font-weight: 700;
+      color: #2e5d4e;
+    }
+
+    @media print {
+      body { background: white; padding: 0; margin: 0; }
+      .biodata-card { box-shadow: none; border: 1px solid #ccc; margin: 0; border-radius: 0; }
+      .photo-item { break-inside: avoid; }
+      .detail-row { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="biodata-card">
+  <div class="ornamental-border"></div>
+  <div class="inner-padding">
+    
+    <div class="ganesh-header">
+      <h3>🪷 श्री गणेशाय नमः 🪷</h3>
+    </div>
+
+    <div class="title-section">
+      <div class="title-decoration"></div>
+    </div>
+
+    <div class="two-columns">
+      
+      <!-- LEFT COLUMN : Information -->
+      <div class="left-col">
+        <div class="info-card">
+          <div class="section-title"><i class="fas fa-user-astronaut"></i> <span>वैयक्तिक माहिती</span></div>
+          <div class="detail-row"><div class="label"><i class="fas fa-signature"></i> संपूर्ण नाव :</div><div class="value">नेहा अनिल झिंजूर्के</div></div>
+          <div class="detail-row"><div class="label"><i class="far fa-calendar-alt"></i> जन्मतारीख :</div><div class="value">31 मे 2008</div></div>
+          <div class="detail-row"><div class="label"><i class="fas fa-clock"></i> जन्मवेळ :</div><div class="value">दुपारी 2:30</div></div>
+          <div class="detail-row"><div class="label"><i class="fas fa-moon"></i> रास नाव :</div><div class="value">चिन्मयी</div></div>
+          <div class="detail-row"><div class="label"><i class="fas fa-tree"></i> देवक :</div><div class="value">मरीतकाच्या वेलाचकड</div></div>
+          <div class="detail-row"><div class="label"><i class="fas fa-ruler"></i> उंची :</div><div class="value">5 फूट 2 इंच</div></div>
+          <div class="detail-row"><div class="label"><i class="fas fa-palette"></i> वर्ण :</div><div class="value">सावळा</div></div>
+          <div class="detail-row"><div class="label"><i class="fas fa-tint"></i> रक्तगट :</div><div class="value">A+</div></div>
+        </div>
+
+        <div class="info-card">
+          <div class="section-title"><i class="fas fa-graduation-cap"></i> <span>शैक्षणिक पात्रता</span></div>
+          <div class="detail-row"><div class="label">🎓 उच्च माध्यमिक :</div><div class="value">१२ वी (विज्ञान शाखा)</div></div>
+        </div>
+
+        <div class="info-card">
+          <div class="section-title"><i class="fas fa-users"></i> <span>कुटुंब व्यवस्था</span></div>
+          <div class="detail-row"><div class="label"><i class="fas fa-father"></i> वडील :</div><div class="value">अनिल ज्ञानदेव झिंजूर्के (शेती)</div></div>
+          <div class="detail-row"><div class="label"><i class="fas fa-female"></i> आई :</div><div class="value">पार्वती अनिल झिंजूर्के</div></div>
+          <div class="detail-row"><div class="label"><i class="fas fa-male"></i> भाऊ :</div><div class="value">प्रशांत अनिल झिंजूर्के</div></div>
+          <div class="detail-row"><div class="label"><i class="fas fa-female"></i> बहिणी :</div><div class="value">२ (विवाहित)</div></div>
+        </div>
+
+        <div class="info-card">
+          <div class="section-title"><i class="fas fa-handshake"></i> <span>नातेवाईक</span></div>
+          <div class="detail-row"><div class="label">चुलते :</div><div class="value">रमेश ज्ञानदेव झिंजूर्के</div></div>
+          <div class="detail-row"><div class="label">मामा :</div><div class="value">महादेव नामदेव शिंदे, ज्ञानेश्वर नामदेव शिंदे</div></div>
+        </div>
+
+        <div class="info-card">
+          <div class="section-title"><i class="fas fa-map-marker-alt"></i> <span>स्थळ व संपर्क</span></div>
+          <div class="detail-row"><div class="label"><i class="fas fa-home"></i> सद्य पत्ता :</div><div class="value">आढळगाव, ता. श्रीगोंदा, जि. अहिल्यानगर</div></div>
+          <div class="detail-row"><div class="label"><i class="fas fa-tree"></i> मूळगाव :</div><div class="value">धामणगाव, ता. आष्टी, जि. बीड</div></div>
+          <div class="detail-row"><div class="label"><i class="fas fa-phone-alt"></i> मोबाईल :</div><div class="value mobile-highlight"><i class="fas fa-whatsapp"></i> 8149213513</div></div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN : Your Images – improved display -->
+      <div class="right-col">
+        <div class="direct-photo-container">
+          <!-- First Image: Replace "Photo.jpg" with your actual image file name -->
+          <div class="photo-item">
+            <img src="./public/src/Photo.jpg" alt="नेहा - फोटो १" 
+                 onerror="this.onerror=null; this.src='https://placehold.co/400x500/fdf4e3/caa64b?text=📷+Photo+1';">
+          </div>
+          <!-- Second Image: Replace "Photo2.jpg" with your actual image file name -->
+          <div class="photo-item">
+            <img src="./public/src/Photo2.jpg" alt="नेहा - फोटो २" 
+                 onerror="this.onerror=null; this.src='https://placehold.co/400x500/fdf4e3/caa64b?text=📷+Photo+2';">
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="section-title"><i class="fas fa-link"></i> <span>नातेसंबंध / कुळे</span></div>
+          <div class="relation-tags">
+            <span class="relation-tag">पोकळे</span><span class="relation-tag">गुंड</span><span class="relation-tag">चव्हाण</span>
+            <span class="relation-tag">कर्डिले</span><span class="relation-tag">चौधरी</span><span class="relation-tag">लोखंडे</span><span class="relation-tag">नरोडे</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+</body>
+</html>
