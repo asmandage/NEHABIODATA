@@ -5,16 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>प्रीमियम विवाह बायोडाटा | नेहा अनिल झिंजूर्के</title>
   
-  <!-- Google Fonts & Font Awesome -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       background: linear-gradient(145deg, #c9b280 0%, #b48b5a 100%);
@@ -26,20 +21,14 @@
       font-family: 'Inter', 'Poppins', sans-serif;
     }
 
-    /* A4 Premium Page - Responsive */
     .biodata-card {
       width: 100%;
       max-width: 794px;
       background: #fffef7;
       position: relative;
-      box-shadow: 0 30px 50px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(202, 166, 75, 0.3) inset, 0 0 0 6px #fff8ed, 0 0 0 8px #caa64b;
+      box-shadow: 0 30px 50px rgba(0,0,0,0.25), 0 0 0 1px rgba(202,166,75,0.3) inset, 0 0 0 6px #fff8ed, 0 0 0 8px #caa64b;
       border-radius: 28px;
       overflow: hidden;
-      transition: all 0.2s;
-    }
-
-    /* Traditional Motif Background */
-    .biodata-card {
       background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgdmlld0JveD0iMCAwIDgwIDgwIj48Y2lyY2xlIGN4PSI0MCIgY3k9IjQwIiByPSIxMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjY2FhNjRiIiBzdHJva2Utd2lkdGg9IjAuNiIgb3BhY2l0eT0iMC4xNSIvPjxjaXJjbGUgY3g9IjQwIiBjeT0iNDAiIHI9IjIyIiBmaWxsPSJub25lIiBzdHJva2U9IiNjYWE2NGIiIHN0cm9rZS13aWR0aD0iMC40IiBvcGFjaXR5PSIwLjEiLz48cGF0aCBkPSJNNDAgMTBMNDAgNzBNMTAgNDBMNzAgNDAiIHN0cm9rZT0iI2NhYTY0YiIgc3Ryb2tlLXdpZHRoPSIwLjQiIG9wYWNpdHk9IjAuMDgiLz48Y2lyY2xlIGN4PSI0MCIgY3k9IjQwIiByPSIzMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjY2FhNjRiIiBzdHJva2Utd2lkdGg9IjAuMyIgb3BhY2l0eT0iMC4wNSIgc3Ryb2tlLWRhc2hhcnJheT0iNCA0Ii8+PHBvbHlsaW5lIHBvaW50cz0iNDAsMTggNTAsMzAgNDAsNDIgMzAsMzAiIHN0cm9rZT0iI2NhYTY0YiIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIwLjUiIG9wYWNpdHk9IjAuMTUiLz48L3N2Zz4=');
       background-repeat: repeat;
       background-size: 68px;
@@ -52,14 +41,10 @@
       position: relative;
       z-index: 2;
     }
-
     @media (min-width: 768px) {
-      .inner-padding {
-        padding: 38px 36px 32px 36px;
-      }
+      .inner-padding { padding: 38px 36px 32px 36px; }
     }
 
-    /* New Language Selector - Elegant Button Group */
     .lang-selector {
       display: flex;
       justify-content: flex-end;
@@ -89,48 +74,25 @@
       border: none;
       letter-spacing: 0.3px;
     }
-    .lang-btn i {
-      margin-right: 6px;
-      font-size: 12px;
-    }
-    .lang-btn.active {
-      background: #caa64b;
-      color: white;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .lang-btn:not(.active):hover {
-      background: #f5e7d4;
-      color: #6e4f28;
-    }
+    .lang-btn i { margin-right: 6px; font-size: 12px; }
+    .lang-btn.active { background: #caa64b; color: white; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .lang-btn:not(.active):hover { background: #f5e7d4; color: #6e4f28; }
     @media (min-width: 768px) {
-      .lang-btn {
-        font-size: 14px;
-        padding: 7px 24px;
-      }
-      .lang-btn i {
-        font-size: 13px;
-      }
+      .lang-btn { font-size: 14px; padding: 7px 24px; }
+      .lang-btn i { font-size: 13px; }
     }
 
     .ornamental-border {
       position: absolute;
-      top: 20px;
-      left: 24px;
-      right: 24px;
+      top: 20px; left: 24px; right: 24px;
       height: 2px;
       background: linear-gradient(90deg, transparent, #caa64b, #c2a144, #caa64b, transparent);
     }
     @media (min-width: 768px) {
-      .ornamental-border {
-        left: 36px;
-        right: 36px;
-      }
+      .ornamental-border { left: 36px; right: 36px; }
     }
-    
-    .ganesh-header {
-      text-align: center;
-      margin-bottom: 8px;
-    }
+
+    .ganesh-header { text-align: center; margin-bottom: 20px; margin-top: 8px; }
     .ganesh-header h3 {
       font-family: 'Poppins', serif;
       font-size: 18px;
@@ -143,85 +105,21 @@
       border-radius: 40px;
     }
     @media (min-width: 768px) {
-      .ganesh-header h3 {
-        font-size: 20px;
-        padding: 4px 28px;
-      }
+      .ganesh-header h3 { font-size: 20px; padding: 4px 28px; }
     }
 
-    .title-section {
-      text-align: center;
-      margin: 8px 0 16px 0;
-    }
-    .main-title {
-      font-size: 26px;
-      font-weight: 700;
-      background: linear-gradient(135deg, #2e5d4e, #caa64b);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      display: inline-block;
-      letter-spacing: 1px;
-      font-family: 'Poppins', sans-serif;
-    }
+    .two-columns { display: flex; flex-direction: column; gap: 24px; margin-top: 12px; }
     @media (min-width: 768px) {
-      .main-title {
-        font-size: 32px;
-      }
+      .two-columns { flex-direction: row; gap: 32px; }
     }
-    .title-decoration {
-      display: block;
-      width: 60px;
-      height: 2px;
-      background: #caa64b;
-      margin: 8px auto 0;
-      border-radius: 4px;
-    }
+    .left-col { flex: 1; }
+    .right-col { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 24px; }
     @media (min-width: 768px) {
-      .title-decoration {
-        width: 80px;
-        margin-top: 12px;
-      }
+      .left-col { flex: 1.4; }
+      .right-col { flex: 0.9; }
     }
 
-    .two-columns {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      margin-top: 12px;
-    }
-    @media (min-width: 768px) {
-      .two-columns {
-        flex-direction: row;
-        gap: 32px;
-      }
-    }
-    .left-col {
-      flex: 1;
-    }
-    .right-col {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 24px;
-    }
-    @media (min-width: 768px) {
-      .left-col {
-        flex: 1.4;
-      }
-      .right-col {
-        flex: 0.9;
-      }
-    }
-
-    .direct-photo-container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 24px;
-    }
+    .direct-photo-container { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 24px; }
     .photo-item {
       background: linear-gradient(145deg, #fff2df, #ffe6ca);
       padding: 8px;
@@ -231,10 +129,7 @@
       max-width: 100%;
     }
     @media (min-width: 768px) {
-      .photo-item {
-        padding: 12px;
-        border-radius: 32px;
-      }
+      .photo-item { padding: 12px; border-radius: 32px; }
     }
     .photo-item img {
       display: block;
@@ -246,30 +141,11 @@
       border: 2px solid #fff8ed;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-    @media (min-width: 480px) {
-      .photo-item img {
-        width: 240px;
-        max-height: 300px;
-      }
-    }
-    @media (min-width: 768px) {
-      .photo-item img {
-        width: 260px;
-        max-height: 320px;
-      }
-    }
-    @media (min-width: 900px) {
-      .photo-item img {
-        width: 280px;
-      }
-    }
+    @media (min-width: 480px) { .photo-item img { width: 240px; max-height: 300px; } }
+    @media (min-width: 768px) { .photo-item img { width: 260px; max-height: 320px; } }
+    @media (min-width: 900px) { .photo-item img { width: 280px; } }
 
-    .info-card {
-      background: rgba(255, 252, 242, 0.8);
-      border-radius: 20px;
-      padding: 4px 0;
-      margin-bottom: 18px;
-    }
+    .info-card { background: rgba(255,252,242,0.8); border-radius: 20px; padding: 4px 0; margin-bottom: 18px; }
     .section-title {
       font-weight: 700;
       font-size: 16px;
@@ -283,18 +159,9 @@
       gap: 8px;
     }
     @media (min-width: 768px) {
-      .section-title {
-        font-size: 18px;
-        border-left: 5px solid #caa64b;
-        padding-left: 14px;
-        margin-bottom: 14px;
-        margin-top: 8px;
-      }
+      .section-title { font-size: 18px; border-left: 5px solid #caa64b; padding-left: 14px; margin-bottom: 14px; margin-top: 8px; }
     }
-    .section-title i {
-      color: #caa64b;
-      font-size: 16px;
-    }
+    .section-title i { color: #caa64b; font-size: 16px; }
     .detail-row {
       display: flex;
       flex-wrap: wrap;
@@ -305,11 +172,7 @@
       padding-bottom: 6px;
     }
     @media (min-width: 768px) {
-      .detail-row {
-        font-size: 14.5px;
-        margin-bottom: 12px;
-        padding-bottom: 8px;
-      }
+      .detail-row { font-size: 14.5px; margin-bottom: 12px; padding-bottom: 8px; }
     }
     .label {
       font-weight: 700;
@@ -322,10 +185,7 @@
       gap: 5px;
     }
     @media (min-width: 768px) {
-      .label {
-        width: 130px;
-        font-size: 14px;
-      }
+      .label { width: 130px; font-size: 14px; }
     }
     .value {
       color: #2c2b26;
@@ -337,18 +197,8 @@
       gap: 6px;
       flex-wrap: wrap;
     }
-    @media (min-width: 768px) {
-      .value {
-        font-size: 14px;
-      }
-    }
-    .relation-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 4px;
-      padding: 0 6px 12px 6px;
-    }
+    @media (min-width: 768px) { .value { font-size: 14px; } }
+    .relation-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; padding: 0 6px 12px 6px; }
     .relation-tag {
       background: #faf0df;
       padding: 4px 10px;
@@ -358,66 +208,14 @@
       color: #6b4c2c;
     }
     @media (min-width: 768px) {
-      .relation-tag {
-        padding: 4px 12px;
-        font-size: 12px;
-      }
+      .relation-tag { padding: 4px 12px; font-size: 12px; }
     }
-    .elegant-footer {
-      margin-top: 24px;
-      text-align: center;
-      border-top: 1px solid #e9ddc3;
-      padding-top: 16px;
-      font-size: 10px;
-      color: #aa8c5a;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 16px;
-    }
-    @media (min-width: 768px) {
-      .elegant-footer {
-        margin-top: 30px;
-        padding-top: 18px;
-        font-size: 11px;
-        gap: 20px;
-      }
-    }
-    .mobile-highlight {
-      font-weight: 700;
-      color: #2e5d4e;
-    }
-    .copyright {
-      text-align: center;
-      font-size: 9px;
-      margin-top: 12px;
-      color: #b49467;
-    }
-    @media (min-width: 768px) {
-      .copyright {
-        font-size: 10px;
-        margin-top: 6px;
-      }
-    }
+    .mobile-highlight { font-weight: 700; color: #2e5d4e; }
 
     @media print {
-      body {
-        background: white;
-        padding: 0;
-        margin: 0;
-      }
-      .biodata-card {
-        box-shadow: none;
-        border: 1px solid #ccc;
-        max-width: 100%;
-        border-radius: 0;
-      }
-      .photo-item {
-        break-inside: avoid;
-      }
-      .detail-row {
-        break-inside: avoid;
-      }
+      body { background: white; padding: 0; margin: 0; }
+      .biodata-card { box-shadow: none; border: 1px solid #ccc; max-width: 100%; border-radius: 0; }
+      .photo-item, .detail-row { break-inside: avoid; }
     }
   </style>
 </head>
@@ -427,7 +225,6 @@
   <div class="ornamental-border"></div>
   <div class="inner-padding">
     
-    <!-- New Language Selector - Elegant Button Group -->
     <div class="lang-selector">
       <div class="lang-buttons">
         <button id="btnMarathi" class="lang-btn active"><i class="fas fa-language"></i> मराठी</button>
@@ -439,261 +236,215 @@
       <h3 id="ganeshText">🪷 श्री गणेशाय नमः 🪷</h3>
     </div>
 
-    <div class="title-section">
-      <div class="main-title" id="mainTitleText"> विवाह बायोडाटा </div>
-      <div class="title-decoration"></div>
-    </div>
-
     <div class="two-columns">
       
-      <!-- LEFT COLUMN : Information -->
+      <!-- LEFT COLUMN -->
       <div class="left-col">
         <div class="info-card">
-          <div class="section-title"><i class="fas fa-user-astronaut"></i> <span id="secPersonal">वैयक्तिक माहिती</span></div>
+          <div class="section-title">
+            <i class="fas fa-user-astronaut"></i>
+            <span id="secPersonal">वैयक्तिक माहिती</span>
+          </div>
           
-          <div class="detail-row"><div class="label"><i class="fas fa-signature"></i> <span class="label-text">संपूर्ण नाव :</span></div><div class="value"><span class="val-text">नेहा अनिल झिंजूर्के</span></div></div>
-          <div class="detail-row"><div class="label"><i class="far fa-calendar-alt"></i> <span class="label-text">जन्मतारीख :</span></div><div class="value"><span class="val-text">31 मे 2008</span></div></div>
-          <div class="detail-row"><div class="label"><i class="fas fa-clock"></i> <span class="label-text">जन्मवेळ :</span></div><div class="value"><span class="val-text">दुपारी 2:30</span></div></div>
-          <div class="detail-row"><div class="label"><i class="fas fa-moon"></i> <span class="label-text">रास नाव :</span></div><div class="value"><span class="val-text">चिन्मयी</span></div></div>
-          <div class="detail-row"><div class="label"><i class="fas fa-tree"></i> <span class="label-text">देवक :</span></div><div class="value"><span class="val-text">मरीतकाच्या वेलाचकड</span></div></div>
-          <div class="detail-row"><div class="label"><i class="fas fa-ruler"></i> <span class="label-text">उंची :</span></div><div class="value"><span class="val-text">5 फूट 2 इंच</span></div></div>
-          <div class="detail-row"><div class="label"><i class="fas fa-palette"></i> <span class="label-text">वर्ण :</span></div><div class="value"><span class="val-text">सावळा</span></div></div>
-          <div class="detail-row"><div class="label"><i class="fas fa-tint"></i> <span class="label-text">रक्तगट :</span></div><div class="value"><span class="val-text">A+</span></div></div>
+          <div class="detail-row">
+            <div class="label"><i class="fas fa-signature"></i> <span class="label-text" data-mr="संपूर्ण नाव :" data-en="Full Name :">संपूर्ण नाव :</span></div>
+            <div class="value"><span class="val-text" data-mr="नेहा अनिल झिंजूर्के" data-en="Neha Anil Zinjurke">नेहा अनिल झिंजूर्के</span></div>
+          </div>
+          <div class="detail-row">
+            <div class="label"><i class="far fa-calendar-alt"></i> <span class="label-text" data-mr="जन्मतारीख :" data-en="Date of Birth :">जन्मतारीख :</span></div>
+            <div class="value"><span class="val-text" data-mr="31 मे 2008" data-en="31 May 2008">31 मे 2008</span></div>
+          </div>
+          <div class="detail-row">
+            <div class="label"><i class="fas fa-clock"></i> <span class="label-text" data-mr="जन्मवेळ :" data-en="Time of Birth :">जन्मवेळ :</span></div>
+            <div class="value"><span class="val-text" data-mr="दुपारी 2:30" data-en="2:30 PM">दुपारी 2:30</span></div>
+          </div>
+          <div class="detail-row">
+            <div class="label"><i class="fas fa-moon"></i> <span class="label-text" data-mr="रास नाव :" data-en="Rashi :">रास नाव :</span></div>
+            <div class="value"><span class="val-text" data-mr="चिन्मयी" data-en="Chinmayi">चिन्मयी</span></div>
+          </div>
+          <div class="detail-row">
+            <div class="label"><i class="fas fa-tree"></i> <span class="label-text" data-mr="देवक :" data-en="Devak :">देवक :</span></div>
+            <div class="value"><span class="val-text" data-mr="मरीतकाच्या वेलाचकड" data-en="Maritakachya Velachakda">मरीतकाच्या वेलाचकड</span></div>
+          </div>
+          <div class="detail-row">
+            <div class="label"><i class="fas fa-ruler"></i> <span class="label-text" data-mr="उंची :" data-en="Height :">उंची :</span></div>
+            <div class="value"><span class="val-text" data-mr="5 फूट 2 इंच" data-en="5 feet 2 inches">5 फूट 2 इंच</span></div>
+          </div>
+          <div class="detail-row">
+            <div class="label"><i class="fas fa-palette"></i> <span class="label-text" data-mr="वर्ण :" data-en="Complexion :">वर्ण :</span></div>
+            <div class="value"><span class="val-text" data-mr="सावळा" data-en="Wheatish">सावळा</span></div>
+          </div>
+          <div class="detail-row">
+            <div class="label"><i class="fas fa-tint"></i> <span class="label-text" data-mr="रक्तगट :" data-en="Blood Group :">रक्तगट :</span></div>
+            <div class="value"><span class="val-text" data-mr="A+" data-en="A+">A+</span></div>
+          </div>
         </div>
 
         <div class="info-card">
-          <div class="section-title"><i class="fas fa-graduation-cap"></i> <span id="secEdu">शैक्षणिक पात्रता</span></div>
-          <div class="detail-row"><div class="label">🎓 <span class="label-text">उच्च माध्यमिक :</span></div><div class="value"><span class="val-text">१२ वी (विज्ञान शाखा)</span></div></div>
+          <div class="section-title">
+            <i class="fas fa-graduation-cap"></i>
+            <span id="secEdu">शैक्षणिक पात्रता</span>
+          </div>
+          <div class="detail-row">
+            <div class="label">🎓 <span class="label-text" data-mr="उच्च माध्यमिक :" data-en="Higher Secondary :">उच्च माध्यमिक :</span></div>
+            <div class="value"><span class="val-text" data-mr="१२ वी (विज्ञान शाखा)" data-en="12th (Science Stream)">१२ वी (विज्ञान शाखा)</span></div>
+          </div>
         </div>
 
         <div class="info-card">
-          <div class="section-title"><i class="fas fa-users"></i> <span id="secFamily">कुटुंब व्यवस्था</span></div>
-          <div class="detail-row"><div class="label"><span class="label-text"> वडील :</span></div><div class="value"><span class="val-text">अनिल ज्ञानदेव झिंजूर्के (शेती)</span></div></div>
-          <div class="detail-row"><div class="label"><span class="label-text">आई :</span></div><div class="value"><span class="val-text">पार्वती अनिल झिंजूर्के</span></div></div>
-          <div class="detail-row"><div class="label"><span class="label-text"> भाऊ :</span></div><div class="value"><span class="val-text">प्रशांत अनिल झिंजूर्के</span></div></div>
-          <div class="detail-row"><div class="label"><span class="label-text"> बहिणी :</span></div><div class="value"><span class="val-text">२ (विवाहित)</span></div></div>
+          <div class="section-title">
+            <i class="fas fa-users"></i>
+            <span id="secFamily">कुटुंब व्यवस्था</span>
+          </div>
+          <div class="detail-row">
+            <div class="label"><span class="label-text" data-mr="वडील :" data-en="Father :">वडील :</span></div>
+            <div class="value"><span class="val-text" data-mr="अनिल ज्ञानदेव झिंजूर्के (शेती)" data-en="Anil Gyanadev Zinjurke (Farming)">अनिल ज्ञानदेव झिंजूर्के (शेती)</span></div>
+          </div>
+          <div class="detail-row">
+            <div class="label"><span class="label-text" data-mr="आई :" data-en="Mother :">आई :</span></div>
+            <div class="value"><span class="val-text" data-mr="पार्वती अनिल झिंजूर्के" data-en="Parvati Anil Zinjurke">पार्वती अनिल झिंजूर्के</span></div>
+          </div>
+          <div class="detail-row">
+            <div class="label"><span class="label-text" data-mr="भाऊ :" data-en="Brother :">भाऊ :</span></div>
+            <div class="value"><span class="val-text" data-mr="प्रशांत अनिल झिंजूर्के" data-en="Prashant Anil Zinjurke">प्रशांत अनिल झिंजूर्के</span></div>
+          </div>
+          <div class="detail-row">
+            <div class="label"><span class="label-text" data-mr="बहिणी :" data-en="Sisters :">बहिणी :</span></div>
+            <div class="value"><span class="val-text" data-mr="२ (विवाहित)" data-en="2 (Married)">२ (विवाहित)</span></div>
+          </div>
         </div>
 
         <div class="info-card">
-          <div class="section-title"><i class="fas fa-handshake"></i> <span id="secRelatives">नातेवाईक</span></div>
-          <div class="detail-row"><div class="label"><span class="label-text">चुलते :</span></div><div class="value"><span class="val-text">रमेश ज्ञानदेव झिंजूर्के</span></div></div>
-          <div class="detail-row"><div class="label"><span class="label-text">मामा :</span></div><div class="value"><span class="val-text">महादेव नामदेव शिंदे, ज्ञानेश्वर नामदेव शिंदे</span></div></div>
+          <div class="section-title">
+            <i class="fas fa-handshake"></i>
+            <span id="secRelatives">नातेवाईक</span>
+          </div>
+          <div class="detail-row">
+            <div class="label"><span class="label-text" data-mr="चुलते :" data-en="Paternal Uncle :">चुलते :</span></div>
+            <div class="value"><span class="val-text" data-mr="रमेश ज्ञानदेव झिंजूर्के" data-en="Ramesh Gyanadev Zinjurke">रमेश ज्ञानदेव झिंजूर्के</span></div>
+          </div>
+          <div class="detail-row">
+            <div class="label"><span class="label-text" data-mr="मामा :" data-en="Maternal Uncle :">मामा :</span></div>
+            <div class="value"><span class="val-text" data-mr="महादेव नामदेव शिंदे, ज्ञानेश्वर नामदेव शिंदे" data-en="Mahadev Namdev Shinde, Dnyaneshwar Namdev Shinde">महादेव नामदेव शिंदे, ज्ञानेश्वर नामदेव शिंदे</span></div>
+          </div>
         </div>
 
         <div class="info-card">
-          <div class="section-title"><i class="fas fa-map-marker-alt"></i> <span id="secContact">स्थळ व संपर्क</span></div>
-          <div class="detail-row"><div class="label"><i class="fas fa-home"></i> <span class="label-text">सद्य पत्ता :</span></div><div class="value"><span class="val-text">आढळगाव, ता. श्रीगोंदा, जि. अहिल्यानगर</span></div></div>
-          <div class="detail-row"><div class="label"><i class="fas fa-tree"></i> <span class="label-text">मूळगाव :</span></div><div class="value"><span class="val-text">धामणगाव, ता. आष्टी, जि. बीड</span></div></div>
-          <div class="detail-row"><div class="label"><i class="fas fa-phone-alt"></i> <span class="label-text">मोबाईल :</span></div><div class="value"><i class="fab fa-whatsapp" style="color:#25D366;"></i> <span class="val-text mobile-highlight">8149213513</span></div></div>
+          <div class="section-title">
+            <i class="fas fa-map-marker-alt"></i>
+            <span id="secContact">स्थळ व संपर्क</span>
+          </div>
+          <div class="detail-row">
+            <div class="label"><i class="fas fa-home"></i> <span class="label-text" data-mr="सद्य पत्ता :" data-en="Current Address :">सद्य पत्ता :</span></div>
+            <div class="value"><span class="val-text" data-mr="आढळगाव, ता. श्रीगोंदा, जि. अहिल्यानगर" data-en="Aadhalgaon, Tal. Shrigonda, Dist. Ahilyanagar">आढळगाव, ता. श्रीगोंदा, जि. अहिल्यानगर</span></div>
+          </div>
+          <div class="detail-row">
+            <div class="label"><i class="fas fa-tree"></i> <span class="label-text" data-mr="मूळगाव :" data-en="Hometown :">मूळगाव :</span></div>
+            <div class="value"><span class="val-text" data-mr="धामणगाव, ता. आष्टी, जि. बीड" data-en="Dhamangaon, Tal. Ashti, Dist. Beed">धामणगाव, ता. आष्टी, जि. बीड</span></div>
+          </div>
+          <div class="detail-row">
+            <div class="label"><i class="fas fa-phone-alt"></i> <span class="label-text" data-mr="मोबाईल :" data-en="Mobile :">मोबाईल :</span></div>
+            <div class="value"><i class="fab fa-whatsapp" style="color:#25D366;"></i> <span class="val-text mobile-highlight" data-mr="8149213513" data-en="8149213513">8149213513</span></div>
+          </div>
         </div>
       </div>
 
-      <!-- RIGHT COLUMN : Images + नातेसंबंध / कुळे -->
+      <!-- RIGHT COLUMN -->
       <div class="right-col">
         <div class="direct-photo-container">
           <div class="photo-item">
-            <img src="./public/src/Photo.jpg" alt="नेहा - फोटो १" 
+            <img src="./public/src/Photo.jpg" alt="नेहा - फोटो १"
                  onerror="this.onerror=null; this.src='https://placehold.co/400x500/fdf4e3/caa64b?text=📷+Photo+1';">
           </div>
           <div class="photo-item">
-            <img src="./public/src/Photo2.jpg" alt="नेहा - फोटो २" 
+            <img src="./public/src/Photo2.jpg" alt="नेहा - फोटो २"
                  onerror="this.onerror=null; this.src='https://placehold.co/400x500/fdf4e3/caa64b?text=📷+Photo+2';">
           </div>
         </div>
         
         <div class="info-card">
-          <div class="section-title"><i class="fas fa-link"></i> <span id="secRelations">नातेसंबंध / कुळे</span></div>
+          <div class="section-title">
+            <i class="fas fa-link"></i>
+            <span id="secRelations">नातेसंबंध / कुळे</span>
+          </div>
           <div class="relation-tags" id="relationTagsContainer">
-            <span class="relation-tag">पोकळे</span>
-            <span class="relation-tag">गुंड</span>
-            <span class="relation-tag">चव्हाण</span>
-            <span class="relation-tag">कर्डिले</span>
-            <span class="relation-tag">चौधरी</span>
-            <span class="relation-tag">लोखंडे</span>
-            <span class="relation-tag">नरोडे</span>
+            <span class="relation-tag" data-mr="पोकळे" data-en="Pokale">पोकळे</span>
+            <span class="relation-tag" data-mr="गुंड" data-en="Gund">गुंड</span>
+            <span class="relation-tag" data-mr="चव्हाण" data-en="Chavan">चव्हाण</span>
+            <span class="relation-tag" data-mr="कर्डिले" data-en="Kardile">कर्डिले</span>
+            <span class="relation-tag" data-mr="चौधरी" data-en="Chaudhari">चौधरी</span>
+            <span class="relation-tag" data-mr="लोखंडे" data-en="Lokhande">लोखंडे</span>
+            <span class="relation-tag" data-mr="नरोडे" data-en="Narode">नरोडे</span>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="elegant-footer">
-      <span id="footerMsg">🌸 विवाह संबंधित माहिती | आदरपूर्वक सादर 🌸</span>
-    </div>
-    <div class="copyright" id="copyrightMsg">© विवाह बायोडाटा | सर्व हक्क राखीव</div>
+    
   </div>
 </div>
 
 <script>
-  (function() {
-    // ----- TRANSLATION DICTIONARIES -----
+  (function () {
     const translations = {
       mr: {
         ganesh: "🪷 श्री गणेशाय नमः 🪷",
-        mainTitle: " विवाह बायोडाटा",
         secPersonal: "वैयक्तिक माहिती",
         secEdu: "शैक्षणिक पात्रता",
         secFamily: "कुटुंब व्यवस्था",
         secRelatives: "नातेवाईक",
         secContact: "स्थळ व संपर्क",
-        secRelations: "नातेसंबंध / कुळे",
-        footerMsg: "🌸 विवाह संबंधित माहिती | आदरपूर्वक सादर 🌸",
-        copyrightMsg: "© विवाह बायोडाटा | सर्व हक्क राखीव",
-        labels: {
-          "संपूर्ण नाव :": "संपूर्ण नाव :",
-          "जन्मतारीख :": "जन्मतारीख :",
-          "जन्मवेळ :": "जन्मवेळ :",
-          "रास नाव :": "रास नाव :",
-          "देवक :": "देवक :",
-          "उंची :": "उंची :",
-          "वर्ण :": "वर्ण :",
-          "रक्तगट :": "रक्तगट :",
-          "उच्च माध्यमिक :": "उच्च माध्यमिक :",
-          " वडील :": " वडील :",
-          "आई :": "आई :",
-          " भाऊ :": " भाऊ :",
-          " बहिणी :": " बहिणी :",
-          "चुलते :": "चुलते :",
-          "मामा :": "मामा :",
-          "सद्य पत्ता :": "सद्य पत्ता :",
-          "मूळगाव :": "मूळगाव :",
-          "मोबाईल :": "मोबाईल :"
-        },
-        values: {
-          "नेहा अनिल झिंजूर्के": "नेहा अनिल झिंजूर्के",
-          "31 मे 2008": "31 मे 2008",
-          "दुपारी 2:30": "दुपारी 2:30",
-          "चिन्मयी": "चिन्मयी",
-          "मरीतकाच्या वेलाचकड": "मरीतकाच्या वेलाचकड",
-          "5 फूट 2 इंच": "5 फूट 2 इंच",
-          "सावळा": "सावळा",
-          "A+": "A+",
-          "१२ वी (विज्ञान शाखा)": "१२ वी (विज्ञान शाखा)",
-          "अनिल ज्ञानदेव झिंजूर्के (शेती)": "अनिल ज्ञानदेव झिंजूर्के (शेती)",
-          "पार्वती अनिल झिंजूर्के": "पार्वती अनिल झिंजूर्के",
-          "प्रशांत अनिल झिंजूर्के": "प्रशांत अनिल झिंजूर्के",
-          "२ (विवाहित)": "२ (विवाहित)",
-          "रमेश ज्ञानदेव झिंजूर्के": "रमेश ज्ञानदेव झिंजूर्के",
-          "महादेव नामदेव शिंदे, ज्ञानेश्वर नामदेव शिंदे": "महादेव नामदेव शिंदे, ज्ञानेश्वर नामदेव शिंदे",
-          "आढळगाव, ता. श्रीगोंदा, जि. अहिल्यानगर": "आढळगाव, ता. श्रीगोंदा, जि. अहिल्यानगर",
-          "धामणगाव, ता. आष्टी, जि. बीड": "धामणगाव, ता. आष्टी, जि. बीड",
-          "8149213513": "8149213513"
-        },
-        relationTags: ["पोकळे", "गुंड", "चव्हाण", "कर्डिले", "चौधरी", "लोखंडे", "नरोडे"]
+        secRelations: "नातेसंबंध / कुळे"
       },
       en: {
         ganesh: "🪷 Shri Ganeshaya Namah 🪷",
-        mainTitle: " Marriage Biodata",
         secPersonal: "Personal Details",
         secEdu: "Educational Qualification",
         secFamily: "Family Details",
         secRelatives: "Relatives",
         secContact: "Location & Contact",
-        secRelations: "Relations / Lineages",
-        footerMsg: "🌸 Marriage Information | Respectfully Presented 🌸",
-        copyrightMsg: "© Marriage Biodata | All Rights Reserved",
-        labels: {
-          "संपूर्ण नाव :": "Full Name :",
-          "जन्मतारीख :": "Date of Birth :",
-          "जन्मवेळ :": "Time of Birth :",
-          "रास नाव :": "Rashi :",
-          "देवक :": "Devak :",
-          "उंची :": "Height :",
-          "वर्ण :": "Complexion :",
-          "रक्तगट :": "Blood Group :",
-          "उच्च माध्यमिक :": "Higher Secondary :",
-          " वडील :": "Father :",
-          "आई :": "Mother :",
-          " भाऊ :": "Brother :",
-          " बहिणी :": "Sisters :",
-          "चुलते :": "Paternal Uncle :",
-          "मामा :": "Maternal Uncle :",
-          "सद्य पत्ता :": "Current Address :",
-          "मूळगाव :": "Hometown :",
-          "मोबाईल :": "Mobile :"
-        },
-        values: {
-          "नेहा अनिल झिंजूर्के": "Neha Anil Zinjurke",
-          "31 मे 2008": "31 May 2008",
-          "दुपारी 2:30": "2:30 PM",
-          "चिन्मयी": "Chinmayi",
-          "मरीतकाच्या वेलाचकड": "Maritakachya Velachakda",
-          "5 फूट 2 इंच": "5 feet 2 inches",
-          "सावळा": "Wheatish",
-          "A+": "A+",
-          "१२ वी (विज्ञान शाखा)": "12th (Science Stream)",
-          "अनिल ज्ञानदेव झिंजूर्के (शेती)": "Anil Gyanadev Zinjurke (Farming)",
-          "पार्वती अनिल झिंजूर्के": "Parvati Anil Zinjurke",
-          "प्रशांत अनिल झिंजूर्के": "Prashant Anil Zinjurke",
-          "२ (विवाहित)": "2 (Married)",
-          "रमेश ज्ञानदेव झिंजूर्के": "Ramesh Gyanadev Zinjurke",
-          "महादेव नामदेव शिंदे, ज्ञानेश्वर नामदेव शिंदे": "Mahadev Namdev Shinde, Dnyaneshwar Namdev Shinde",
-          "आढळगाव, ता. श्रीगोंदा, जि. अहिल्यानगर": "Aadhalgaon, Tal. Shrigonda, Dist. Ahilyanagar",
-          "धामणगाव, ता. आष्टी, जि. बीड": "Dhamangaon, Tal. Ashti, Dist. Beed",
-          "8149213513": "8149213513"
-        },
-        relationTags: ["Pokale", "Gund", "Chavan", "Kardile", "Chaudhari", "Lokhande", "Narode"]
+        secRelations: "Relations / Lineages"
       }
     };
 
-    // DOM elements
     const btnMarathi = document.getElementById('btnMarathi');
     const btnEnglish = document.getElementById('btnEnglish');
 
-    function setActiveButton(lang) {
-      if(lang === 'mr') {
-        btnMarathi.classList.add('active');
-        btnEnglish.classList.remove('active');
-      } else {
-        btnMarathi.classList.remove('active');
-        btnEnglish.classList.add('active');
-      }
-    }
-
     function setLanguage(lang) {
       const t = translations[lang];
-      if(!t) return;
-      
+
+      // Section headings
       document.getElementById('ganeshText').innerText = t.ganesh;
-      document.getElementById('mainTitleText').innerText = t.mainTitle;
       document.getElementById('secPersonal').innerText = t.secPersonal;
       document.getElementById('secEdu').innerText = t.secEdu;
       document.getElementById('secFamily').innerText = t.secFamily;
       document.getElementById('secRelatives').innerText = t.secRelatives;
       document.getElementById('secContact').innerText = t.secContact;
       document.getElementById('secRelations').innerText = t.secRelations;
-      document.getElementById('footerMsg').innerText = t.footerMsg;
-      document.getElementById('copyrightMsg').innerText = t.copyrightMsg;
-      
-      // Translate all label-text elements
-      document.querySelectorAll('.label .label-text').forEach(el => {
-        const original = el.innerText;
-        if(t.labels[original]) el.innerText = t.labels[original];
+
+      // All label-text spans — read from data attribute
+      document.querySelectorAll('.label-text').forEach(el => {
+        el.innerText = el.getAttribute('data-' + lang) || el.innerText;
       });
-      
-      // Translate all value-text spans
-      document.querySelectorAll('.value .val-text').forEach(span => {
-        const originalVal = span.innerText;
-        if(t.values[originalVal]) span.innerText = t.values[originalVal];
+
+      // All val-text spans — read from data attribute
+      document.querySelectorAll('.val-text').forEach(el => {
+        el.innerText = el.getAttribute('data-' + lang) || el.innerText;
       });
-      
-      // Translate relation tags
-      const relationContainer = document.getElementById('relationTagsContainer');
-      const tags = t.relationTags;
-      if(relationContainer && tags.length) {
-        const tagSpans = relationContainer.querySelectorAll('.relation-tag');
-        tagSpans.forEach((tagSpan, idx) => {
-          if(tags[idx]) tagSpan.innerText = tags[idx];
-        });
-      }
-      
-      setActiveButton(lang);
+
+      // Relation tags — read from data attribute
+      document.querySelectorAll('.relation-tag').forEach(el => {
+        el.innerText = el.getAttribute('data-' + lang) || el.innerText;
+      });
+
+      // Toggle active button
+      btnMarathi.classList.toggle('active', lang === 'mr');
+      btnEnglish.classList.toggle('active', lang === 'en');
     }
-    
-    // Event listeners for new buttons
+
     btnMarathi.addEventListener('click', () => setLanguage('mr'));
     btnEnglish.addEventListener('click', () => setLanguage('en'));
-    
-    // Set initial language to Marathi
+
+    // Start in Marathi
     setLanguage('mr');
   })();
 </script>
